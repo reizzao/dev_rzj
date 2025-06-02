@@ -14,7 +14,9 @@ fi
 
 # -------------------------------------------------
 `
-
+Atualizar_pacotes
+  instaladis_com_apt: `sudo apt update && sudo apt upgrade # atualiza os pacotes via repo já baixado `
+Link: [ex atualizar neovim] (https://g.co/gemini/share/5fbe7c0d8c17)
 
 # FLOW <Produtividade Dev>
 
