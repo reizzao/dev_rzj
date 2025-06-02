@@ -48,7 +48,7 @@ obs:baixe a configuracao.toml e add no ~/.config/alacritty/ (obs: senao tiver o 
 Abrir_Terminal: add ele nos favoritos da bar de apps do seu pc e abra no click.
 
 Customizar_Terminal
- // Mostrar desenho bonito de arvore de diretorios 
+ // Mostrar desenho bonito de arvore de diretorios
  $`sudo apt install tree -y`
  // usar: no diretorio desejado $`tree -a -I .git`
 
@@ -72,3 +72,30 @@ Neovim : `
   // LazyVim :
   [Instalacao no Site_Oficial:] (https://www.lazyvim.org/), obs: q para sair
   `
+
+Lib_Para_link_Simbolico
+    Nome: stow, beneficio: ele ja linka um arquivo com toda pasta ao inves de entrar e fazer link de arquivo por arquivo dentro da pasta.
+    instalar: `sudo apt install stow -y`
+    confere_instalacao: `stow --version`
+
+    usar: entra na pasta alvo , digite: `stow <alvo>
+    // este alvo será criado um link simbolico na HOME ex: stow tmux - linkar o tmux da HOME com o desta pasta alvo que eu dei o comando.`
+    conferir: `ls -la ~/`
+
+    uso_frequente: `
+    // dentro da pasta dotfiles : dar os comandos para linkar com os do repo clonado :: obs: na primeira vez os alvos de origem nao precisam existir.
+
+    comandos :
+    stow alacritty
+    stow nvim
+    stow tmux
+    `
+
+gerenciador_pacotes
+    Nome: apt,
+    acessar_infos_site_pacotes_instalados : `apt show <nomepacote>`
+
+MyFlow_Dotfiles :
+-
+- no dotfiles imitar a estrutura que seria na maquina
+- usar stow para link simbolico para enganar a maquina, ela procurará um alvo e este alvo sera o que linkei na /dotfiles que por sua vez está guardada no github.

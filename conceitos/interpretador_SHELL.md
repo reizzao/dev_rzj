@@ -9,46 +9,21 @@
 
 # Manuseio_Arquivos
 criar_link_simbolico: $`ln -s <origem> <destino>  // ln de link simbolico`
+desfazer_link_simbolico: `unlink <arquivo>`
 criar_arquivo: `use:: >> arquivo.ext // use 2 setas antes do nome do arquivo que é o Here Document ao invés de touch arquivo.`
 copiar_um_arquivo_pro_outro: `mv arquivoOrigem.ext arquivoDestino.ext`
 
 desinstalar_instalado_via_apt : sudo apt autoremove
 <PACOTE>  // desinstala as dependências também.
 
+Pesquisas :
+mostrar_estrutura_sem_ocultos: `ls -l`
+mostrar_estrutura_com_ocultos: `ls -la`
+mostrar_detalhes_arquivo: `ls -la <url_alvo>`
+mostrar_detalhes_tamanho_arquivo: `ls -lah <url_alvo> // o h mostra o tamanho.`
+mostrar_o_que_e_o_arquivo: `file <url_alvo>`
 
- * Mostrar diretório atual:
-   pw
 
-   * pwd (print working directory) exibe o caminho completo do diretório em que você está atualmente.
- * Criar arquivo:
-   touch nome_do_arquivo.txt
-
-   * >> ou touch cria um arquivo vazio com o nome especificado. Se o arquivo já existir, ele atualiza o timestamp de acesso e modificação do arquivo.
-   * Você também pode criar um arquivo e adicionar conteúdo a ele imediatamente usando o redirecionamento:
-     echo "Conteúdo do meu arquivo" > meu_novo_arquivo.txt
-
- * Renomear arquivo:
-   mv nome_antigo.txt novo_nome.txt
-
-   * mv (move) é usado para mover ou renomear arquivos e diretórios. Quando o destino está no mesmo diretório, ele efetivamente renomeia o arquivo.
- * Deletar arquivo:
-   rm nome_do_arquivo.txt
-
-   * rm (remove) é usado para deletar arquivos. Tenha cuidado ao usar rm, pois os arquivos excluídos geralmente não podem ser recuperados facilmente.
- * Mostrar local do arquivo em uso (do próprio comando que você está executando no shell):
-   which nome_do_comando
-
-   * which localiza o caminho de um comando no sistema de arquivos. Por exemplo, para saber onde o comando ls está localizado:
-     which ls
-
-   * Se você quiser saber o caminho do script shell que você mesmo está executando (dentro do próprio script), você pode usar variáveis como $0:
-     echo "O caminho deste script é: $0"
-
- * Copiar arquivo, movendo para um novo arquivo (criando uma cópia e mantendo o original no lugar):
-   cp arquivo_original.txt copia_do_arquivo.txt
-
-   * cp (copy) faz uma cópia do arquivo de origem para o arquivo de destino. O arquivo original permanece inalterado.
-Exemplo prático de uso sequencial:
 # 1. Mostrar diretório atual
 pwd
 
