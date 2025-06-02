@@ -9,7 +9,13 @@ gs() {
 }
 
 gl() {
-  git reflog
+  git log
+  # mostra mais detalhes no log das acoes feitas
+}
+
+grl() {
+	git reflog
+	# mostra menos detalhes no log de acoes feitas
 }
 
 grr2() {
