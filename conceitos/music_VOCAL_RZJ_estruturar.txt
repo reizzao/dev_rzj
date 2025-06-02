@@ -5,6 +5,9 @@ regioes_momentos_musica:  Inicios: Grave, Meio: Medio, Refrao: agudo
 emitir
  global: todos apssos sem perder o timbre dos harmonicos agudo.
 
+Elevar_PalatoMole: bocejo, chegar Bom, falar ENG, 
+link: https://g.co/gemini/share/55fdb26b838b
+
  ataque: no Palato Mole empurrando-o seu fundo Nuca atraz da cabeça,  Link: (https://g.co/gemini/share/b628cfe73a1e)
 
 
