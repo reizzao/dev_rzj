@@ -1,5 +1,8 @@
 # Edicao
 
+
+colar: `p  # p de paste # cola quantas vezes precisar o p ## no modo comando`
+
 ## substituição:
 
 substituir_ocorrencias_no_projeto_todo: use o plugin telescope
