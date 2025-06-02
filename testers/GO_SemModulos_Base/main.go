@@ -51,6 +51,8 @@ var SaveEntyDTO1 = Enty{
 	C2: "Zachars",
 }
 
+// foo1
+
 func main() {
 
 	create := memoryEntyRepository.Save(SaveEntyDTO1)
