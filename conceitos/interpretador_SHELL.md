@@ -17,6 +17,9 @@ desinstalar_instalado_via_apt : sudo apt autoremove
 <PACOTE>  // desinstala as dependências também.
 
 Pesquisas :
+
+- localizar_alvos : link : (https://g.co/gemini/share/7fafc91c02f1)
+
 mostrar_estrutura_sem_ocultos: `ls -l`
 mostrar_estrutura_com_ocultos: `ls -la`
 mostrar_detalhes_arquivo: `ls -la <url_alvo>`
