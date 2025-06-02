@@ -7,6 +7,6 @@ alias lst="tree -a -I .git"
 
 # atalhos diretorios
 alias dev="cd $HOME/$DOTDEV/"
-alias drzj="cd $HOME/drzj/"
+alias dclones="cd $HOME/dotclones/"
 alias nd="cd $HOME/.config/nvim/" # nvim
 alias vsd="cd $HOME/.config/Code/User/" # vscode user

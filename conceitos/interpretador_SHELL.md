@@ -1,5 +1,11 @@
 3 Interpretador SHELL
 
+# Deletar
+- deletar_arquivos_espeficificos: `rm alvo1 alvo2`
+- deletar_varios_de_uma_extensao: `rm *.js  // deletar todos com extensao .js`
+- deletar_arquivo: rm -rf <file>
+- deletar_diretorio: rm <diretorio>
+- parametros_para_remover: -i //vai pedir autorização | -f não precisara autorizar mesmo que seja protegido.
 
 # Manuseio_Arquivos
 criar_arquivo: `use:: >> arquivo.ext // use 2 setas antes do nome do arquivo que é o Here Document ao invés de touch arquivo.`

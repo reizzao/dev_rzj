@@ -12,7 +12,7 @@ gl() {
   git reflog
 }
 
-grl() {
+grr2() {
   # recuperar att no remoto para o local antes de mexer no local
 
   # git fetch && git reset --hard && git push && git merge --force # todo: melhorar
@@ -21,7 +21,7 @@ grl() {
 
 }
 
-gatt() {
+grr() {
   git pull && git push && git merge
 }
 

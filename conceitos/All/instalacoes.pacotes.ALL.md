@@ -38,10 +38,13 @@ Nerdfonts : (https://www.nerdfonts.com/) , obs: entre na pagina de donwloads
         - Nome: Source Code Pro , Demos: (https://www.programmingfonts.org/#source-code-pro)
     ]
 
+Terminal_MultJanelas:
+Tmux: recarregar_mudancas_de_configuracao: $`tmux source ~/.tmux.conf`
+Customizador_design: catppuccin, acesso: (https://github.com/catppuccin/tmux)
 
 Terminal_Alacritty : instalacao: $`:sudo apt install alacritty -y`
-configuracao_toml : (https://github.com/caiodelgadonew/dotfiles/tree/main/alacritty/.config) - obs:
-baixe a configuracao.toml e add no ~/.config/alacritty/ (obs: senao tiver o diretorio alacritty crie-o e cole o arquivo de config.)
+configuracao_toml : (https://github.com/caiodelgadonew/dotfiles/tree/main/alacritty/.config)
+obs:baixe a configuracao.toml e add no ~/.config/alacritty/ (obs: senao tiver o diretorio alacritty crie-o e cole o arquivo de config.)
 Abrir_Terminal: add ele nos favoritos da bar de apps do seu pc e abra no click.
 
 Customizar_Terminal

@@ -2,7 +2,7 @@
 
 # SYSTEM
 
-alias rs="source ~/.bashrc" # restart no bash para propagar mudanças
+alias rr="source ~/.bashrc" # reconectar propagar as mudanças no bashrc e meus myshell
 
 off() {
   sudo poweroff
