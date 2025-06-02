@@ -8,6 +8,7 @@
 - parametros_para_remover: -i //vai pedir autorização | -f não precisara autorizar mesmo que seja protegido.
 
 # Manuseio_Arquivos
+criar_link_simbolico: $`ln -s <origem> <destino>  // ln de link simbolico`
 criar_arquivo: `use:: >> arquivo.ext // use 2 setas antes do nome do arquivo que é o Here Document ao invés de touch arquivo.`
 copiar_um_arquivo_pro_outro: `mv arquivoOrigem.ext arquivoDestino.ext`
 
