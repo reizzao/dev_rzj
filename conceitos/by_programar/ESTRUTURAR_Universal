@@ -1,0 +1,119 @@
+
+#PRIMORDmIAL
+Polo_Unico: em TUDO faça ter somente uma fonte de informacao polo unico onde se mudar na fonte muda em tudo que a usa.
+
+objeto seed : fazer para ser primeiros registros de EXEMPLO na base de dados
+objeto default : fazer para ser primeiros registros de FABRICA na APLICACAO para o Client visualizar.
+
+valor ::
+Quando um campo vai ser um objeto -> cria um struct- e o campo vai ter opcoes pode ser uma coisa ou outra faz dele um objeto enum
+
+para ser um objeto ou outro ::
+em golang: cria interface - e os tipos de obejtos apra serem de uma interface que tem metodo, estes tipos tem que ter metodo igual dessa interface.
+
+Inteligencia :
+- Adicionar Inteligência: é add funções
+- Local de add inteligência é nas funções de caso de uso
+
+:Comeco algoritmos
+- Comecar criar o contrato de tipos
+- use test oficial da linguagem ao inves de testers em console, assim a app ja fica garantida testada.
+- Criar um input de tester para usar no test oficial - inicialmente sem objetos complexos : comece com dados primitivos
+- Na funcao test - testar o caso de uso com o input
+-
+
+
+# ValoresDefault
+valorDefault_Hardcode : Valor Default em campo de novos objetos
+- crio o valorDefault_Hardcode e uso na funcao que vai criar novos objetos.
+- pego o campo alvo que quero o default valor e atribuo o valorDefault_Hardcode
+- no final devolvo o objeto modificado.
+
+# Pastas
+- pasta test : melhor deixar na raiz root do projeto, beneficio: é mais facil de acessar.
+
+:Convencoes
+Nomes_Arquivos_de_Test : nomea-los com o nome do que ele esta testando, ex: Test_Create_Foo.inputFoo_test
+
+# Algoritmos
+  ## Estruturar Objeto
+  - modelar EntidadeModel que sera a informação completa final.
+  - habitar: com os campos Request e Computed { para consumir o que vira de fora, e mostrar o que é default proprio da entidade final }
+
+  # REPOSITORIO - GITHUB
+  - Modelo_Commit : categporiaFeito: [local] <afetado> o que fez, Exemplo: refactor: [defaults] <estrofes> ok
+
+  # FUNCAO_METODOS
+  - prometa entregar devolver um tipo
+  - se a informacao a ser manipulada e ser modificada como resposta vir de fora, coloque-a como parametro da funcao
+  - declare a funcao com todas essas promessas se nao usar return nao devolvera nada e a resposta sera undefined.
+  - nocaso de metodo: defina quem é o this ou seja o objeto que tera as propriedades a serem manipuladas.
+  - no corpo da funcao: use variaveis de auxilio para serem maniupladas na formula.
+  - formulas : é o que é preciso para chegar num resultado final, use operacoes logicas ou apenas atribuicoes para definir valores a serem usados no resultado
+  - faça o resultado e devolvar retorne o que prometeu no formato do tipo que havia prometido.
+  EXEMPLO:
+  ```
+  function Multiplica(i) {
+  const auxModificador = 2
+
+  const resFormula = i * auxModificador
+
+  const res = resFormula
+
+  return res
+
+}
+// ONDE SERA USADO
+console.log(Multiplica(10))
+  ```
+
+# CONDICIONAIS
+- Recurso : Condicionais : DAR AO USER A OPÇÃO DE DAR UM INPUT - QUE ESTEJA ENTRE AS OPCOES DISPONIVEIS EM UM OBJETO > SEM IFS
+
+1 - Faz objDeOpcoes com metodos , onde cada nome de metodo sera o que o usuario podera escolher de input.
+-- cada metodo deste tetorna o que vc quer dar de resposta ao acertar o input.
+2 - faz a funcao que vai receber o input e devolver as opcoes do objDeOpcoes
+ -- que recebe a escolha e retorna o objDeOpcoes [ na posicao do input recebido]() e ja auto executa porque as opcoes sao funcoes/metodos.
+
+# CONVENCOES
+Nome_Variavel: Escolha pelo que ela irá fazer ou guardar, dica: no uso voce lendo a variavel voce identifica o que ela faz, padrao: para nomes compostos use Substantivo+Verbo
+
+Nome de Funcao: Escolha pelo que ela irá fazer, dica: no uso voce lendo a funcao voce identifica o que ela faz, padrao: para nomes compostos use Substantivo+Verbo ex: Multiplica() vai multiplica o que tiver dentro ou no param.
+
+nome de constantes : constantes tem que serem tudo MAIUSCULA OS NOMES DA VARIAVEL
+
+nome de apelidos/alias :
+  - em linguagens de pacotes como go : -  Crie alias apelido para importacoes dentro do arquivo assim se for mudar muda somente a url de importacao , porque o resto esta usando a variavel, nomeie a var de importacão com no minimo 3letras_abrevidas para nao confundir o compilador com parametro de funcoes e metodos.
+
+  - como escolher abreviacao de nomes de pacotes por arquivo : use a abreviacao do nome original com no minimo 3 letras ex: para ModelCampoHarmonico use mch.
+
+pastas para pacotes: como podem haver mais de 1 arquivo da mesma familia , nomeie dentro da entidade a pastaPacote exemplo: com nome da entidadee o que ela possui exemplo: modelcomposicao/ , usecasecomposicao/
+
+# NOMEACAO ARQUIVOS
+- nome arquivo principal da pasta : main
+- nome arquivo para response : response
+
+# TIPAGENS
+- para cada chave crie um tipo Response até chegar no seu primitivo , exemplo: em response.go / ResRequest // ResRequest = string
+
+# RODANDO TEST OFICIAL
+- em golang o comando para rodar o test tem que ser dado na pasta raiz onde tem o main.extensao principal master da app.
+
+# TESTS OFICIAIS DE GARANTIA
+	   - crie o tipo do response do sut : ex: ResSut = tipo
+	   - crie a var auxiliar global no test , chamada sut , para ser a funcionalidade principal a ser testada no test.
+	   - crie suite de test conforme pede a linguagem : em golang tem que comecar com Test_NOmeEntidade( e receber parametro da lib de test ex: t *testing.T )
+	   - dentro crie a varAuxiliar expect que sera o resultado esperado no test,
+	   - e tambem a varAuxiliar compare que sera o resultado que voce queira comparar com o resultado do sut,
+	   - faça a condicional usando operadores logicos para definir o que fazer comparando sut e o que voce quer comparar
+	   - por consequencia lance um erro da linguagem usando o parametro de test , para caso nao seja o esperado exploda um erro parando o test.
+
+# ENTIDADE ACOES
+- 1º cria a estrutura model com os campos que tera a entidade.
+- 2º cria funcoes exemplo: CRUD para criar objeto(s) da entidade ja estruturada.
+- 3º test oficial de garantia : faça tests dos [casos de uso, ]
+- 4º opcao test com testers comeca os tests : crie inputTester para preencher em forma de tester o que é peddo no usecase --> testers do casoDeUso com o inputTester : (SE O USAR)crie um main.testers para concentrar todos casosDeuso com os input testers -> e chame este testers.main no main da app para acompanhar os testers.
+
+# ALGORITMOS
+resultado: em funcoes de servico sempre retorne uma variavel de resultado , construa este resultado antes guarde em uma varDeResultado (assim vc tem a chance de converter este resultado apra o tipo desejado de saida) e retorne esta var resultado
+exemplo: var formula = foo --> var res = formula -> return res

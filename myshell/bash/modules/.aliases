@@ -1,0 +1,12 @@
+# Aliases
+
+# by comandos
+alias v="nvim"
+alias itellij="$HOME/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # ITELLIJ
+alias lst="tree -a -I .git"
+
+# atalhos diretorios
+alias dev="cd $HOME/$DOTDEV/"
+alias drzj="cd $HOME/drzj/"
+alias nd="cd $HOME/.config/nvim/" # nvim
+alias vsd="cd $HOME/.config/Code/User/" # vscode user

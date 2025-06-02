@@ -1,0 +1,23 @@
+# System
+
+# SYSTEM
+
+alias rs="source ~/.bashrc" # restart no bash para propagar mudanças
+
+off() {
+  sudo poweroff
+  # desligar pc imediatamente
+  # para desligar em 5 segundos: sudo shutdown -h +5
+}
+
+up() {
+  sudo apt update
+}
+
+upp() {
+  sudo apt update
+  sudo apt upgrade -y
+  sudo apt autoremove -y
+  sudo apt autoclean
+  sudo apt clean
+}

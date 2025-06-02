@@ -1,0 +1,10 @@
+# Vocal  Rzj Simples
+
+regioes_momentos_musica:  Inicios: Grave, Meio: Medio, Refrao: agudo
+
+emitir
+ global: todos apssos sem perder o timbre dos harmonicos agudo
+ ataque: no bico frontal inferior
+ conducao: sobe e desce - igual vocalize padrao escala
+ finais: de volta ao bico - igual fim vocalize que desceu
+

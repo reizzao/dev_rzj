@@ -1,0 +1,53 @@
+# TODAS LINGUAGEMS
+
+### QualquerValor_any
+Em_golang: para usar a interface vazia nao usa o sinal de atribuicao = somente add interface{},
+ex: var Obj  interface{}
+
+### Linter
+- GOLANG
+golint : https://dev.to/guiyomh/golangci-lint-a-powerful-and-complete-go-linter-5eb8
+
+  - Tem que ter um lint para verificar variaveis e estruturas nao usadas
+  - em golang temos o golint : mas TODO(NAO DETECTOU STRUCT NAO USADA) : tem que instalar com: `sudo apt install golint` - e rodar no terminal : golint
+  - opcao usar por projeto a lib: codecoroner, link: https://github.com/3rf/codecoroner
+
+### LIB PROPRIA GOLANG
+importante: a lib tem que estar sempre em um pacote que esteja na raiz do projeto e chamado o artefato no main raiz do projeto para reusar- fora do projeto remotamente, se tiver em subpastas remotamente da como nao encontraod o pacote ao tentar reusar
+
+### encontrar Modulos_Libs_Externas :
+  em_Go : comandos terminal : `GoLib && go mod tidy && go get <nomeDoModulo_endereco_Github> `
+  detalhes: via github o pacote alvo tem que ser escrito sua url completa atá a ultima pasta sem a barra / ex: enderecogitub/pacotealvo
+
+### OBJETO MAPA
+recurso: OBJETO MAPA DEVOLVE UM OBJETO COM CHAVE E VALOR DO MESMO TIPO PROMETIDO NA DECLARACAO
+- declarar mapa : variavel = map[tipoValorChave]tipoValorDoValordaChave
+exemplo : var myMapa = map[string]string{ // aqui as chaves e valores de acordo com o tipo prometido apra cada uma }
+
+- em GO os metodos tem que estar no mesmo pacote da estrutura de tipo do Objeto a ser usado como seu this
+    detalhes: [ preciso aponta o t de this, mas nem sempre preciso usa-lo: é só praapontar o obj dono do metodo.,
+    ]
+
+
+# PRIMITIVO STRINGS TEXTOS  :: EM GOLANG
+TemplateLiterals_VariasLinhasTexto: Dentro de Aspas/crazes ex: `texto em cada linha aqui sem precisar usar \n a cada fim de linha desejada`.
+
+Interpolacao_De_Variavel: numero :`%d`, texto `%s`, decimais: `%.2f - explicacao: por padrao o %f exibe 6 casas decimais - vc pode definir quantas casas quer mostrar após o % com ponto numeroDecasas e o f - exemplo: %2.f vai mostrar 2 numeros depois do ponto.`
+
+devolver_string_interpolada : em golang usar a lib fmt.sprintf ,
+exemplo: `msgFormat := fmt.Sprintf(`foo : %s, bar: %s`, variable1, variable2)`
+
+# TIPOS DA LINGUAGEM
+funcao :  func() tipoDoRetorno , exemplo: var foo =  func() string
+
+# DECLARACOES - ATRIBUICOES
+Atribuir_funcao_a_uma_variavel: var foo =  func() string
+declarar_mais_de_uma_variavel_livre_sem_escopo_ao_mesmo_tempo :
+exemplo: `
+var (
+	Variable1      = "foo1"
+	Variable2      = "foo2"
+)
+`
+
+# interpolacao de string

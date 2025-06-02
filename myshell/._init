@@ -1,0 +1,13 @@
+# _INIT
+
+# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
+stty -ixon
+
+# POLOUNICOS : variaveis_uso_global
+## important: declara sem $ , mas pra uso use o $
+export DOTDEV=dotdev # todo: arrumar pra valer global
+
+# ENTRADA MODULOS
+if [ -f $HOME/$DOTDEV/myshell/bash/.main  ]; then
+    . $HOME/$DOTDEV/myshell/bash/.main
+fi

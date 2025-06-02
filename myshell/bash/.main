@@ -1,0 +1,31 @@
+# TEST_INIT BASH
+
+# Importando para exportar ao init
+if [ -f $HOME/$DOTDEV/myshell/bash/modules/.testers  ]; then
+    . $HOME/$DOTDEV/myshell/bash/modules/.testers
+fi
+if [ -f $HOME/$DOTDEV/myshell/bash/modules/.PATH  ]; then
+    . $HOME/$DOTDEV/myshell/bash/modules/.PATH
+fi
+if [ -f $HOME/$DOTDEV/myshell/bash/modules/.aliases  ]; then
+    . $HOME/$DOTDEV/myshell/bash/modules/.aliases
+fi
+if [ -f $HOME/$DOTDEV/myshell/bash/modules/.github  ]; then
+    . $HOME/$DOTDEV/myshell/bash/modules/.github
+fi
+if [ -f $HOME/$DOTDEV/myshell/bash/modules/.system  ]; then
+    . $HOME/$DOTDEV/myshell/bash/modules/.system
+fi
+
+# DEFS
+export vs="code"
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
+
+# OPEN
+alias dbash="cd $HOME/$DOTDEV/myshell"
+alias dmusic="cd $HOME/Documentos/BC_Music"
+
+
+# ola() {
+#   echo "Olá Mundo 0 !"
+# }
