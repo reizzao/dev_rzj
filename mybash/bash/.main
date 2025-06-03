@@ -1,18 +1,62 @@
 # iMPORTS MAIN : Importando para exportar ao init app
 
-if [ -f $HOME/$FOLDER_DEV/mybash/bash/.aliases  ]; then
-    . $HOME/$FOLDER_DEV/mybash/bash/.aliases
-fi
+# IMPORTS MODULE
 
-if [ -f $HOME/$FOLDER_DEV/mybash/bash/.vars  ]; then
-    . $HOME/$FOLDER_DEV/mybash/bash/.vars
-fi
-
-if [ -f $HOME/$FOLDER_DEV/mybash/bash/.imports_module  ]; then
-    . $HOME/$FOLDER_DEV/mybash/bash/.imports_module
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.testers  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.testers
 fi
 
 
-test_mainmodule() {
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.PATH  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.PATH
+fi
+
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.github  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.github
+fi
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.system  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.system
+fi
+
+# ALIASES
+
+# by comandos
+alias v="nvim"
+# alias EDITOR1="nvim"
+alias itellij="$HOME/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # ITELLIJ
+alias lst="tree -a -I .git"
+
+# recarregamentos
+alias rr="source ~/.bashrc" # recarrega bashrc - obs: atalho rb naopode
+alias rt="tmux source ~/.tmux.conf" # recarrega tmux
+
+
+edit_nvim() {
+  cd $HOME/dotfiles/nvim/.config/nvim/
+  # cd $HOME/dotfiles/nvim/.config/nvim/ && $EDITOR1 && v
+}
+
+# atalhos diretorios
+alias dbash="cd $HOME/$FOLDER_DEV/mybash"
+alias dmusic="cd $HOME/Documentos/BC_Music"
+alias dev="cd $HOME/$FOLDER_DEV/"
+# alias dev="cd ~/dev_rzj/"
+alias dot="cd $HOME/dotfiles/"
+alias dclones="cd $HOME/dotclones/"
+alias nd="cd $HOME/.config/nvim/" # nvim
+alias vsd="cd $HOME/.config/Code/User/" # vscode user
+alias edit_tmux="cd $HOME/dotfiles/tmux/"
+alias edit_alac="cd $HOME/dotfiles/alacritty/.config/alacritty/"
+alias edit_bash="cd $HOME/FOLDER_DEV/mybash"
+
+
+# STANDY BY
+# alias edit_nvim="cd $HOME/dotfiles/nvim/.config/nvim/ && $EDITOR1" # todo
+
+
+
+test_main() {
   echo "Olá mainmodule 0 !"
 }

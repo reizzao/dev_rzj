@@ -1,5 +1,17 @@
 # _INIT
 
+# Vars - Define as Variaveisdo modulo
+# obs: fica aqui em primeira_visao.
+## important: vars export declara Normal mas usa com $
+
+# USE GLOBAL
+export FOLDER_DEV=dev_rzj # polounico pasta do dev
+export EDITOR1="nvim" # editor 1
+
+
+# USE IN SYSTEM
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
+
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
 stty -ixon
 
