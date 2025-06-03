@@ -7,8 +7,8 @@ Pos_Formatacao_de+_P :insira essa chama no `~/.bashrc` para funcionar o My sShel
 # MINHAS CUSTOMIZAÇÕES
 
 # CHAMA MY PERSONAL SHELL
-if [ -f $HOME/dotdev/myshell/._init ]; then
-    . $HOME/dotdev/myshell/._init
+if [ -f $HOME/dotdev/mybash/._init ]; then
+    . $HOME/dotdev/mybash/._init
 fi
 
 

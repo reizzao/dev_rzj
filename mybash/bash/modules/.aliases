@@ -6,7 +6,7 @@ alias itellij="$HOME/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea
 alias lst="tree -a -I .git"
 
 # recarregamentos
-alias rr="source ~/.bashrc" # reconectar propagar as mudanças no bashrc e meus myshell
+alias rr="source ~/.bashrc" # reconectar propagar as mudanças no bashrc e meus mybash
 alias rt="tmux source ~/.tmux.conf"
 
 

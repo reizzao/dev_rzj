@@ -8,6 +8,10 @@ stty -ixon
 export DOTDEV=dotdev # todo: arrumar pra valer global
 
 # ENTRADA MODULOS
-if [ -f $HOME/$DOTDEV/myshell/bash/.main  ]; then
-    . $HOME/$DOTDEV/myshell/bash/.main
+if [ -f $HOME/$DOTDEV/mybash/bash/.main  ]; then
+    . $HOME/$DOTDEV/mybash/bash/.main
 fi
+
+test_init() {
+  echo "Olá Init 0 !"
+}
