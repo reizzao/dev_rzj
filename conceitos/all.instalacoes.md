@@ -82,6 +82,8 @@ Lib_Para_link_Simbolico
     // este alvo será criado um link simbolico na HOME ex: stow tmux - linkar o tmux da HOME com o desta pasta alvo que eu dei o comando.`
     conferir: `ls -la ~/`
 
+    remover_link_by_stow: `stow -D <alvo>`
+
     uso_frequente: `
     // dentro da pasta dotfiles : dar os comandos para linkar com os do repo clonado :: obs: na primeira vez os alvos de origem nao precisam existir.
 
