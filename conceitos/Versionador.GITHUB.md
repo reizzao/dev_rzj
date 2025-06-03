@@ -73,7 +73,16 @@ Ciclo_para_Mergiar_Com_Burocracia _Aprovacao :
 
 ]
 
-
+Ordem_Sincronizacao
+ Modificacoes_RemotoComLocal: `
+git pul
+git merge forçado
+git add .
+git commit recebendo a mensagem, 
+git push
+git reflog
+`
+Tutorial: [Fazendo git_sync com bash](https://g.co/gemini/share/9d376a76270c)
 
 
 
