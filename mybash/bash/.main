@@ -1,31 +1,18 @@
-# TEST_INIT BASH
+# iMPORTS MAIN : Importando para exportar ao init app
 
-# Importando para exportar ao init
-if [ -f $HOME/$DOTDEV/mybash/bash/modules/.testers  ]; then
-    . $HOME/$DOTDEV/mybash/bash/modules/.testers
-fi
-if [ -f $HOME/$DOTDEV/mybash/bash/modules/.PATH  ]; then
-    . $HOME/$DOTDEV/mybash/bash/modules/.PATH
-fi
-if [ -f $HOME/$DOTDEV/mybash/bash/modules/.aliases  ]; then
-    . $HOME/$DOTDEV/mybash/bash/modules/.aliases
-fi
-if [ -f $HOME/$DOTDEV/mybash/bash/modules/.github  ]; then
-    . $HOME/$DOTDEV/mybash/bash/modules/.github
-fi
-if [ -f $HOME/$DOTDEV/mybash/bash/modules/.system  ]; then
-    . $HOME/$DOTDEV/mybash/bash/modules/.system
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/.aliases  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/.aliases
 fi
 
-# DEFS
-export vs="code"
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]$"
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/.vars  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/.vars
+fi
 
-# OPEN
-alias dbash="cd $HOME/$DOTDEV/mybash"
-alias dmusic="cd $HOME/Documentos/BC_Music"
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/.imports_module  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/.imports_module
+fi
 
 
-# ola() {
-#   echo "Olá Mundo 0 !"
-# }
+test_mainmodule() {
+  echo "Olá mainmodule 0 !"
+}

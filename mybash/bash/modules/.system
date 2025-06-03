@@ -18,3 +18,5 @@ upp() {
   sudo apt autoclean
   sudo apt clean
 }
+
+

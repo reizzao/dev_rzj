@@ -3,7 +3,7 @@
 ---
 
 # IMPORTANTE
-- siga os passos do diretorio` ~/$DOTDEV/ all instalacoes` para funcionar o my shell personal
+- siga os passos do diretorio` ~/$FOLDER_DEV/ all instalacoes` para funcionar o my shell personal
 -
 
 ---

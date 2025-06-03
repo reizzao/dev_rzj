@@ -1,0 +1,33 @@
+# Aliases
+
+# by comandos
+alias v="nvim"
+# alias EDITOR1="nvim"
+alias itellij="$HOME/_programas_/intellij_Community/idea-IC-232.9559.62/bin/idea.sh" # ITELLIJ
+alias lst="tree -a -I .git"
+
+# recarregamentos
+alias rr="source ~/.bashrc" # recarrega bashrc - obs: atalho rb naopode
+alias rt="tmux source ~/.tmux.conf" # recarrega tmux
+
+
+edit_nvim() {
+  cd $HOME/dotfiles/nvim/.config/nvim/
+  # cd $HOME/dotfiles/nvim/.config/nvim/ && $EDITOR1 && v
+}
+
+# atalhos diretorios
+alias dbash="cd $HOME/$FOLDER_DEV/mybash"
+alias dmusic="cd $HOME/Documentos/BC_Music"
+alias dev="cd $HOME/$FOLDER_DEV/"
+alias dot="cd $HOME/dotfiles/"
+alias dclones="cd $HOME/dotclones/"
+alias nd="cd $HOME/.config/nvim/" # nvim
+alias vsd="cd $HOME/.config/Code/User/" # vscode user
+alias edit_tmux="cd $HOME/dotfiles/tmux/"
+alias edit_alac="cd $HOME/dotfiles/alacritty/.config/alacritty/"
+alias edit_bash="cd $HOME/FOLDER_DEV/mybash"
+
+
+# STANDY BY
+# alias edit_nvim="cd $HOME/dotfiles/nvim/.config/nvim/ && $EDITOR1" # todo

@@ -1,0 +1,19 @@
+# IMPORTS MODULE
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.testers  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.testers
+fi
+
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.PATH  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.PATH
+fi
+
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.github  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.github
+fi
+
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/modules/.system  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/modules/.system
+fi

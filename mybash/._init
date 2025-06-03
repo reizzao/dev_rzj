@@ -3,13 +3,11 @@
 # CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
 stty -ixon
 
-# POLOUNICOS : variaveis_uso_global
-## important: declara sem $ , mas pra uso use o $
-export DOTDEV=dotdev # todo: arrumar pra valer global
+
 
 # ENTRADA MODULOS
-if [ -f $HOME/$DOTDEV/mybash/bash/.main  ]; then
-    . $HOME/$DOTDEV/mybash/bash/.main
+if [ -f $HOME/$FOLDER_DEV/mybash/bash/.main  ]; then
+    . $HOME/$FOLDER_DEV/mybash/bash/.main
 fi
 
 test_init() {
