@@ -3,8 +3,27 @@
 regioes_momentos_musica:  Inicios: Grave, Meio: Medio, Refrao: agudo
 
 emitir
- global: todos apssos sem perder o timbre dos harmonicos agudo
- ataque: no bico frontal inferior
+ global: todos apssos sem perder o timbre dos harmonicos agudo.
+
+Elevar_PalatoMole: bocejo, chegar Bom, falar ENG, 
+link: https://g.co/gemini/share/55fdb26b838b
+
+ ataque: no Palato Mole empurrando-o seu fundo Nuca atraz da cabeça,  Link: (https://g.co/gemini/share/b628cfe73a1e)
+
+
  conducao: sobe e desce - igual vocalize padrao escala
+
  finais: de volta ao bico - igual fim vocalize que desceu
+
+Dinâmica: 
+ volumes: [
+- opcaoSimplesContraste: se começar Alto pare nk contraste e vice versa
+
+- opcaoBaixoNoMeio: comecaMedio - baixa nk meio - termina Alto/Medio
+
+]
+
+Termine_com_boca :  da vogal que vai acabar
+link: https://www.instagram.com/reel/DKZ1dpBxqu1/?igsh=cXI3d20yb2hnNjcy
+
 

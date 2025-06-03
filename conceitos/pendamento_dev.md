@@ -1,0 +1,2 @@
+- criar um atalho lembre do que quer primeiro com ele , ex: abrir = open 
+- tecla leader prefixo : escolha teclas mais perto.

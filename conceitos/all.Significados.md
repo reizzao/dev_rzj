@@ -1,5 +1,8 @@
 # Significados all:
 
+Praticamos_Linguagem_Bash : Shell é apelido `Veiculo`, Bash é o carro que usamos ex: `BNW`
+link: (https://g.co/gemini/share/850e07973e61)
+
 dot: ponto
 dotfiles: arquivos com ponto
 

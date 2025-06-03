@@ -2,6 +2,9 @@
 
 O vim é o core o coração do sistema, para se informar quais configurações dele podemos usar digite: :help options
 
+comandos:
+ - repetir_comando: `<numeroRepeticoes> <comando>`
+
 snippers : snnipets/atalhosDeTexto/Dicionário Ortográficos da pra fazer no vimrc todo: pesquise.,
 
 Arwuivos : 
