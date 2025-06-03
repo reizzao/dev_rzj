@@ -15,3 +15,11 @@ link: https://g.co/gemini/share/55fdb26b838b
 
  finais: de volta ao bico - igual fim vocalize que desceu
 
+Dinâmica: 
+ volumes: [
+- opcaoSimplesContraste: se começar Alto pare nk contraste e vice versa
+
+- opcaoBaixoNoMeio: comecaMedio - baixa nk meio - termina Alto/Medio
+
+]
+
