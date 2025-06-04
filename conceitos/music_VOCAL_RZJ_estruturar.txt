@@ -1,21 +1,30 @@
 # Vocal  Rzj Simples
 
-regioes_momentos_musica:  Inicios: Grave, Meio: Medio, Refrao: agudo
+# Emitir
+ global: [
+- todos passos sem perder o timbre dos harmonicos agudo.
 
-emitir
- global: todos apssos sem perder o timbre dos harmonicos agudo.
-
-Elevar_PalatoMole: bocejo, chegar Bom, falar ENG, 
+- Elevar_PalatoMole: bocejo, chegar Bom, falar ENG, 
 link: https://g.co/gemini/share/55fdb26b838b
 
- ataque: no Palato Mole empurrando-o seu fundo Nuca atraz da cabeça,  Link: (https://g.co/gemini/share/b628cfe73a1e)
+
+- todaEmissão: cada emissão 1 mesmo ar e dentro dela vc controla volume e força.
+
+ ataque: Movimento de fazer o Fry, no Palato Mole empurrando-o seu fundo Nuca atraz da cabeça,  Link: (https://g.co/gemini/share/b628cfe73a1e)
 
 
- conducao: sobe e desce - igual vocalize padrao escala
+ conducao: [
+- sobe e desce - igual vocalize padrao escala
+]
 
  finais: de volta ao bico - igual fim vocalize que desceu
 
+---
+
 Dinâmica: 
+
+regioes_momentos_musica:  Inicios: Grave, Meio: Medio, Refrao: agudo
+
  volumes: [
 - opcaoSimplesContraste: se começar Alto pare nk contraste e vice versa
 
@@ -25,5 +34,8 @@ Dinâmica:
 
 Termine_com_boca :  da vogal que vai acabar
 link: https://www.instagram.com/reel/DKZ1dpBxqu1/?igsh=cXI3d20yb2hnNjcy
+
+---
+
 
 
