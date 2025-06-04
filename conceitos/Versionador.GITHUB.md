@@ -76,9 +76,9 @@ Ciclo_para_Mergiar_Com_Burocracia _Aprovacao :
 Ordem_Sincronizacao
  Modificacoes_RemotoComLocal: `
 git pul
-git merge forçado
+git merge salvando automaticamente sem perguntar
 git add .
-git commit recebendo a mensagem, 
+git commit recebendo a mensagem ou opcional com mensagem padrao 
 git push
 git reflog
 `
