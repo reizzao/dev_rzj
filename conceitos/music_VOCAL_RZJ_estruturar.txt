@@ -16,12 +16,19 @@ link: https://g.co/gemini/share/55fdb26b838b
  Conducao: [
 - sobe e desce - igual vocalize padrao escala
 
-- Use: Enfeites_Varios_Finais_Emissao: [ vibrato, whisper, glissando, liso,   ] , Tutoriaus: [ byViny https://www.instagram.com/reel/DKaXxe6SU1_/?igsh=cWhvYWNobjdyeWlq , ]
-
 ]
 
  Finais: de volta ao bico - igual fim vocalize que desceu
-Use: nas penúltima vogais use enfeites_de_finais: [  melisma    ] 
+Use: Destaque sempre a PENULTIMA_VOFAL e nela use enfeites.
+
+Enfeites :
+ Use: Enfeites_Finais_Respostas: [ vibrato, whisper, glissando, liso,   ] , 
+
+ Enfeites_de_Finais_Estrofes: [  melisma    ] 
+
+ Resumo: Use enfeites nas penúltima vogais resposta e estrofe
+
+tutoriais: [ by Viny https://www.instagram.com/reel/DKaXxe6SU1_/?igsh=cWhvYWNobjdyeWlq , ]
 
 ---
 
