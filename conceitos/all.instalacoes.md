@@ -41,11 +41,18 @@ Nerdfonts : (https://www.nerdfonts.com/) , obs: entre na pagina de donwloads
     ]
 
 Terminal_MultJanelas:
-Tmux: recarregar_mudancas_de_configuracao: $`tmux source ~/.tmux.conf`
-Customizador_design: catppuccin, acesso: (https://github.com/catppuccin/tmux)
 
-Terminal_Alacritty : instalacao: $`:sudo apt install alacritty -y`
-configuracao_toml : (https://github.com/caiodelgadonew/dotfiles/tree/main/alacritty/.config)
+    Terminator:
+    instalacao: [site](https://linuxuniverse.com.br/linux/terminator)
+    configurar: criar sua pasta no config: $`~/.config/terminator` e inserir as configuracoes.
+
+    Tmux:
+        recarregar_mudancas_de_configuracao: $`tmux source ~/.tmux.conf`
+        Customizador_design: catppuccin, acesso: (https://github.com/catppuccin/tmux)
+
+    Terminal_Alacritty :
+        instalacao: $`:sudo apt install alacritty -y`
+        configuracao_toml : (https://github.com/caiodelgadonew/dotfiles/tree/main/alacritty/.config)
 obs:baixe a configuracao.toml e add no ~/.config/alacritty/ (obs: senao tiver o diretorio alacritty crie-o e cole o arquivo de config.)
 Abrir_Terminal: add ele nos favoritos da bar de apps do seu pc e abra no click.
 
@@ -73,6 +80,9 @@ Neovim : `
   // Libs-Plugins-gerenciadores
   // LazyVim :
   [Instalacao no Site_Oficial:] (https://www.lazyvim.org/), obs: q para sair
+
+  - inicie clonando o starter para a pasta principal ~/.config/nvim faça dela o nvim:  `git clone https://github.com/LazyVim/starter`
+
   `
 
 Lib_Para_link_Simbolico
