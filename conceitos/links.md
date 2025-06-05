@@ -1,5 +1,8 @@
 # Links
 
+## MyDev
+- [My_Gist : ](https://gist.github.com/reizzao)
+
 ## Devs
 - [CaioDelgado](https://linktr.ee/caiodelgadonew) - obs: dicas Dotfiles+Nvim+Tmux
 
