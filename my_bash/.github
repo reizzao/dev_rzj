@@ -1,9 +1,10 @@
 # Modules by Github
-# log_git() {
-#   echo "OK olá << >> em shell_app/modules_bash.git" # LOGAR FILE
-# }
 
-gs() {
+gitt() {
+  echo "OK olá << MODULE - UTILS - GITHUB >> " # LOGAR FILE
+}
+
+gts() {
   git status
 }
 
